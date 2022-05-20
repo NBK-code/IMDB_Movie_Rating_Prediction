@@ -34,7 +34,7 @@ Tthe datset has the following attributes:-
 27. aspect_ratio :- Aspect ratio the movie was made in
 28. movie_facebook_likes:- Total no of facebook likes for the movie
 
-The dataset 5043 records for these 28 attributes.
+The dataset has 5043 records for these 28 attributes.
 ## EDA and Data Processing
 ## Model Selection
 ## Conclusion
