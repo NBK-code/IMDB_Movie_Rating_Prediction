@@ -35,9 +35,28 @@ Tthe datset has the following attributes:-
 28. movie_facebook_likes:- Total no of facebook likes for the movie
 
 The dataset has 5043 records for these 28 attributes.
-## EDA and Data Processing
+## EDA and Data Preprocessing
+The work concerning EDA and data preprocessing is available in the [IMDB_mrp_EDA_and_Visualizations](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_EDA_and_Visualizations.ipynb) notebook.
+
+Steps invoved in getting the data ready for model training and selection are:
+
+1. Initial data exploration
+2. Getting rid of unnecessary features
+3. Dealing with missing values (either by deletion or filling in)
+4. One-hot encoding categorical values
+5. Train-test split
+6. scaling and normalization of quantitative features
+7. Removing highly correlated features
+
+Special attention was paid to the following issues:
+
+1. **Dummy variable trap**: remove one column of one-hot encoded categorical variable to avoid correlation between features.
+2. **Multicollinearity**: find the correlation matrix of quantitative variables and remove any correlated feature that has a correlation coefficient of >0.7 with any other feature.
+3. **Data leakage**: First perform the train-test split and then impute the missing values (in train, val and test set) based only on the train data.
+4. **Feature normalization**: Decision tree based algorithms are scale invariant. But for neural networks perform better with normaly distributed features. 
+
 ## Model Selection
-The work concerning model selection is available in [IMDB_mrp_Model_Selection.ipynb](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb) notebook.
+The work concerning model selection is available in the [IMDB_mrp_Model_Selection.ipynb](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb) notebook.
 
 The following models were trained on the data:
 
@@ -46,7 +65,7 @@ The following models were trained on the data:
 3. XGBoost Regressor
 4. Neural Network
 
-To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using a simple for loop based search. For the neural network model, we just choose the model that provides the least validation error. The performanceof the models on the test data are as follows:
+To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using a simple for loop based search. For the neural network model, we just choose the model that provides the least validation error. The performance of the models on the test data are as follows:
 
 | Model | Mean Absolute Error | Accuracy |
 | --- | --- | --- |
