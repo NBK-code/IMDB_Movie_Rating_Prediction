@@ -37,4 +37,20 @@ Tthe datset has the following attributes:-
 The dataset has 5043 records for these 28 attributes.
 ## EDA and Data Processing
 ## Model Selection
+The following models were trained on the data:
+
+1. Decision Tree Regressor
+2. Random Forest Regressor
+3. XGBoost Regressor
+4. Neural Network
+
+To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using grid search. For the neural network model, we just choose the model that provides the least validation error. The final results are as follows:
+
+| Model | Mean Absolute Error | Accuracy |
+| --- | --- | --- |
+| Decision Tree Regressor | 1.006 | 87.29% |
+| Random Forest Regressor | 1.005 | 89.33% |
+| XGBoost Regressor | 1.003 | 89.68% |
+| Neural Network | 1.059 | 80.23% |
+
 ## Conclusion
