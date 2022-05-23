@@ -37,6 +37,8 @@ Tthe datset has the following attributes:-
 The dataset has 5043 records for these 28 attributes.
 ## EDA and Data Processing
 ## Model Selection
+The work concerning model selection is available in [IMDB_mrp_Model_Selection.ipynb notebook](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb).
+
 The following models were trained on the data:
 
 1. Decision Tree Regressor
@@ -44,7 +46,7 @@ The following models were trained on the data:
 3. XGBoost Regressor
 4. Neural Network
 
-To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using grid search. For the neural network model, we just choose the model that provides the least validation error. The final results are as follows:
+To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using a simple for loop based search. For the neural network model, we just choose the model that provides the least validation error. The final results are as follows:
 
 | Model | Mean Absolute Error | Accuracy |
 | --- | --- | --- |
@@ -52,5 +54,7 @@ To control the problem of overfitting in the first three models, an optimal valu
 | Random Forest Regressor | 1.005 | 89.33% |
 | XGBoost Regressor | 1.003 | 89.68% |
 | Neural Network | 1.059 | 80.23% |
+
+We see that the XBBoost regressor works better than other models, although the random forest regressor is a close second. 
 
 ## Conclusion
