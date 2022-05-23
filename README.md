@@ -50,12 +50,11 @@ Steps invoved in getting the data ready for model training and selection are:
 
 Special attention was paid to the following issues:
 
-1. **Dummy variable trap**: remove one column of one-hot encoded categorical variable to avoid correlation between features.
-2. **Multicollinearity**: find the correlation matrix of quantitative variables and remove any correlated feature that has a correlation coefficient of >0.7 with any other feature.
+1. **Dummy variable trap**: Remove one column of one-hot encoded categorical variable to avoid correlation between features.
+2. **Multicollinearity**: Find the correlation matrix of quantitative variables and remove any correlated feature that has a correlation coefficient of >0.7 with any other feature.
 3. **Data leakage**: First perform the train-test split and then impute the missing values (in train, val and test set) based only on the train data. This ensures that there is no data leakage from test set to train set.
 4. **Feature normalization**: Decision tree based algorithms are scale invariant. But neural networks perform better with normaly distributed features. Most of our quantitative variables turned out to have a highly skewed distributions. Hence sklearn PowerTransformer was used to normalize the features.
-
-Another conscious choice was not to use the variables director_name, actor_1_name, actor_2_name and actor_3_name in the final train (val and test) set. The only way to use these features would have been as one-hot encoded categorical variables. This results in over 10000 features. To have over 10000 features with only 5000 data points would result in high variance models. One way to reduce the number of features is to limit only to top-10 (for example) frequent categories. But this turned out to miss a lot of data records. Hence it was decided to altogether drop these variables. 
+5. **Curse of Dimensionality**: A conscious choice was not to use the variables director_name, actor_1_name, actor_2_name and actor_3_name in the final train (val and test) set. The only way to use these features would have been as one-hot encoded categorical variables. This results in over 10000 features. To have over 10000 features with only 5000 data points would result in high variance models. One way to reduce the number of features is to limit only to top-10 (for example) frequent categories for each variable. But this turned out to miss a lot of data records. Hence it was decided to altogether drop these variables. 
 
 ## Model Selection
 The work concerning model selection is available in the [IMDB_mrp_Model_Selection.ipynb](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb) notebook.
