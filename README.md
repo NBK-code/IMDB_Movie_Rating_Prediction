@@ -3,7 +3,7 @@
 ## Introduction
 We will be using IMDB 5000 Movie Data set to build models that predict the IMDB score based on a bunch of features associated with a movie. IMDB score is an important measure of how good a movie is and is maintained by IMDb (Internet Movie Database) owned by Amazon. As of March 2022, the database has records of over 600,000 movies and over 6.5 million TV episodes.
 ## Dataset
-Tthe datset has the following attributes:-
+The data set has the following attributes:-
 
 1. Color :- Movie is black or coloured
 2. Director_name:- Name of the movie director
