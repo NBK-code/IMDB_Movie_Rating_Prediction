@@ -37,7 +37,7 @@ Tthe datset has the following attributes:-
 The dataset has 5043 records for these 28 attributes.
 ## EDA and Data Processing
 ## Model Selection
-The work concerning model selection is available in [IMDB_mrp_Model_Selection.ipynb notebook](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb).
+The work concerning model selection is available in [IMDB_mrp_Model_Selection.ipynb](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb) notebook.
 
 The following models were trained on the data:
 
