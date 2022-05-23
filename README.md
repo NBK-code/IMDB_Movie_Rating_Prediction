@@ -43,9 +43,9 @@ Steps invoved in getting the data ready for model training and selection are:
 1. Initial data exploration
 2. Getting rid of unnecessary features
 3. Dealing with missing values (either by deletion or filling in)
-4. One-hot encoding categorical values
+4. One-hot encoding categorical variables
 5. Train-test split
-6. scaling and normalization of quantitative features
+6. Scaling and normalization of quantitative features
 7. Removing highly correlated features
 
 Special attention was paid to the following issues:
