@@ -55,6 +55,6 @@ To control the problem of overfitting in the first three models, an optimal valu
 | XGBoost Regressor | 1.003 | 89.68% |
 | Neural Network | 1.059 | 80.23% |
 
-We see that the XBBoost regressor works better than other models, although the random forest regressor is a close second. 
+We see that the XGBoost regressor works better than other models, although the random forest regressor is a close second. 
 
 ## Conclusion
