@@ -52,8 +52,8 @@ Special attention was paid to the following issues:
 
 1. **Dummy variable trap**: remove one column of one-hot encoded categorical variable to avoid correlation between features.
 2. **Multicollinearity**: find the correlation matrix of quantitative variables and remove any correlated feature that has a correlation coefficient of >0.7 with any other feature.
-3. **Data leakage**: First perform the train-test split and then impute the missing values (in train, val and test set) based only on the train data.
-4. **Feature normalization**: Decision tree based algorithms are scale invariant. But neural networks perform better with normaly distributed features. Most of our quantitative variables turned out to have a highly skewed distributions. Sklearn PowerTransformer was used to normalize the features.
+3. **Data leakage**: First perform the train-test split and then impute the missing values (in train, val and test set) based only on the train data. This ensures that there is no data leakage from test set to train set.
+4. **Feature normalization**: Decision tree based algorithms are scale invariant. But neural networks perform better with normaly distributed features. Most of our quantitative variables turned out to have a highly skewed distributions. Hence sklearn PowerTransformer was used to normalize the features.
 
 ## Model Selection
 The work concerning model selection is available in the [IMDB_mrp_Model_Selection.ipynb](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_Model_Selection.ipynb) notebook.
