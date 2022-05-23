@@ -36,7 +36,7 @@ Tthe datset has the following attributes:-
 
 The dataset has 5043 records for these 28 attributes.
 ## EDA and Data Preprocessing
-The work concerning EDA and data preprocessing is available in the [IMDB_mrp_EDA_and_Visualizations](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_EDA_and_Visualizations.ipynb) notebook.
+The work concerning EDA and data preprocessing is available in the [IMDB_mrp_EDA_and_Preprocessing](https://github.com/NBK-code/IMDB_Movie_Rating_Prediction/blob/main/IMDB_mrp_EDA_and_Preprocessing.ipynb) notebook.
 
 Steps invoved in getting the data ready for model training and selection are:
 
