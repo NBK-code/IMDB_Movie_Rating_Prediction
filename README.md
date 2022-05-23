@@ -46,7 +46,7 @@ The following models were trained on the data:
 3. XGBoost Regressor
 4. Neural Network
 
-To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using a simple for loop based search. For the neural network model, we just choose the model that provides the least validation error. The final results are as follows:
+To control the problem of overfitting in the first three models, an optimal value for the hyperparameter max_depth (maximum depth of trees) was found using a simple for loop based search. For the neural network model, we just choose the model that provides the least validation error. The performanceof the models on the test data are as follows:
 
 | Model | Mean Absolute Error | Accuracy |
 | --- | --- | --- |
