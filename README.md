@@ -70,12 +70,12 @@ To control the problem of overfitting in the first three models, an optimal valu
 
 | Model | Mean Absolute Error | Accuracy |
 | --- | --- | --- |
-| Decision Tree Regressor | 1.006 | 87.29% |
-| Random Forest Regressor | 1.005 | 89.33% |
-| XGBoost Regressor | 1.003 | 89.68% |
-| Neural Network | 1.059 | 80.23% |
+| Decision Tree Regressor | 1.0074 | 87.31% |
+| Random Forest Regressor | 0.9991 | 89.54% |
+| XGBoost Regressor | 1.0044 | 89.77% |
+| Neural Network | 1.0592 | 79.92% |
 
-We see that the XGBoost regressor works better than other models, although the random forest regressor is a close second. 
+Based on mean absolute error, we see that the random forest regressor regressor works better than other models, although the XGBoost regressor is a close second. 
 
 ## Conclusion
-After a careful data preprocessing, model building and hyperparameter tuning, it was found that XGBoost regressor works best for the IMDb score prediction task. Further hyperparameter tuning would allow us to get more juice out of the models.
+After a careful data preprocessing, model building and hyperparameter tuning, it was found that random forest regressor works best for the IMDb score prediction task. Further hyperparameter tuning would allow us to get more juice out of the models.
