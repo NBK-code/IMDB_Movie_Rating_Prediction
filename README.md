@@ -72,7 +72,7 @@ To control the problem of overfitting in the first three models, an optimal valu
 | --- | --- | --- |
 | Decision Tree Regressor | 1.0074 | 87.31% |
 | Random Forest Regressor | 0.9991 | 89.54% |
-| XGBoost Regressor | 1.0044 | 89.77% |
+| XGBoost Regressor | 1.0113 | 90.12% |
 | Neural Network | 1.0592 | 79.92% |
 
 Based on mean absolute error, we see that the random forest regressor works better than other models, although the XGBoost regressor is a close second. 
